@@ -5,41 +5,36 @@
 	je l'etofferais avec le temps.
 
 	Un site bien pratique: https://learngitbranching.js.org/?locale=fr_FR
+	
+	Mod visuel:
+		installer nodejs: https://nodejs.org/fr
 
 
 		Liste de commandes:
 
-			Navigation:
-
-			Aide et recherche:
+			Aide:
 
 				git help												-> Aide générale de git.
 				git help <commande>										-> Aide de la <commande>.
 
 
-			Quitter sauvegarder:
-
-
-			Couper Copier Coller:
-
-
-			Undo/Redo, répètitions:
-
-
-			Création, gestion de dossiers et fichiers:
-
-				mkdir "Nom de dossier"									-> Créé un dossier.
-				touch "Nom de fichier.extention"						-> Créé un fichier du type du .extention choisi.
-
-			Configuration et status:
+			Configuration:
 
 				git config --list										-> Etat de la configuration.
 				git config --global	user.email <email@gmail.com>		-> Configureun email d'utilisateur.
 				git config --global	user.name <Name>					-> Configure un nom d'utilisateur.
 				git config --global	color.ui true						-> Active les couleur pour le text.
 
+
+			Status et log:
+
 				git status												-> Donne l'état du projet courant.
 				git status -s											-> Donne une version courte de l'état du projet courant.
+
+				git log													-> Affiche la liste des commit.
+				git log -n												-> Affiche la liste des n dernier commit.
+				git log --oneline										-> Affiche la liste des commit version courte.
+				git log -p <fichier>									-> Affiche tous les commit modifiant <fichier>.
 
 				git diff												-> Affiche toutes modiffications apporter depuis le dernier commit.
 
@@ -47,22 +42,44 @@
 			Versionning:
 
 				git init  												-> Créé un .git caché et initialise le versionning.
+
 				git add <fichier>										-> Tracked et Staged le <fichier> dans l'index.
+
+				git reset												-> Unstaged le contenue de l'index.
+				git reset HEAD <fichier>								-> Unstaged le <fichier>.
 
 				git commit -m "Nom du commit"							-> Créé un commit et le "nomme".
 				git commit -a -m "Nom du commit"						-> Staged tous se qui est Tracked puis éxécute "git commit -m".
 
-				git log													-> Affiche la liste des commit.
-				git log -n												-> Affiche la liste des n dernier commit.
-				git log --oneline										-> Affiche la liste des commit version courte.
-				git log -p <fichier>									-> Affiche tous les commit modifiant <fichier>.
+					<*.txt>												-> Selectionne tous les .txt.
+					<.>													-> Tous sauf les suppression de fichier.
+					<--all>												-> Tous suppression de fichier comprise.
 
 
+			Navigation:
 
-			Racourcie:
-				
-				<*.txt>													-> Selectionne tous les .txt.
-				<--all>													-> Selectionne tous.
+				git checkout <commit>									-> Permet de voir l'état du projet au <commit>.
+				git checkout <commit> <fichier>							-> Raméne le <fichier> à sont état au <commit> pour modification puis Staged.
+				git checkout <branch>									-> Améne à la <branch> choisi.
+
+
+			Revert et Reset:
+
+				Revert (ne detruits pas l'historique de commit)
+
+					git revert <commit>									-> Annule le <commit> puis éxécute "git commit -m".
+					git revert <commit> <fichier>						-> Annule les modifications faite sur <fichier> au <commit> puis éxécute "git commit -m".
+
+
+				Reset (detruits l'hisorique de commit):
+
+					git reset HEAD^										-> Raméne au commit precedent.
+					git reset <commit>									-> Raméne au <commit> en conservant les fichiers modifier non commit.
+
+						--soft											-> Garde les modifications en cour et les Staged
+						--mixed											-> Garde les modiffications en cour mais Unstaged.
+						--hard											-> Supprime toutes les modifications faite.
+
 
 			Notion:
 
@@ -84,10 +101,10 @@
 						La dernière version du fichier ne fait pas partie de l'index.
 							git status -s = " M" en rouge.
 					Voir commande:
-						git add <fichier> et 
+						git add <fichier> et git reset HEAD <fichier>.
 
 				Index:
-					Contient ce qui sera dans le prochain commit.
+					Contient les fichiers Staged qui seron dans le prochain commit.
 
 				Commit:
 					Créé et versionne une nouvelle étape du projet.
