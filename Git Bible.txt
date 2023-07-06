@@ -48,7 +48,13 @@
 				git add <fichier>										-> Tracked et Staged le <fichier> dans l'index.
 
 				git commit -m "Nom du commit"							-> Créé un commit et le "nomme".
-				git commit -a -m "Nom du commit"						-> Staged tous se qui est Tracked puis éxécute "git commit -m". 
+				git commit -a -m "Nom du commit"						-> Staged tous se qui est Tracked puis éxécute "git commit -m".
+
+				git log													-> Affiche la liste des commit.
+				git log -n												-> Affiche la liste des n dernier commit.
+				git log --oneline										-> Affiche la liste des commit version courte.
+				git log -p <fichier>									-> Affiche tous les commit modifiant <fichier>.
+
 
 
 			Racourcie:

@@ -11,7 +11,7 @@
 			
 			Mode normal	-> navigation standard.
 
-					<Nbr><commande>		-> Répètera la commande <Nbr> fois.
+					n<commande>		-> Répètera la commande n fois.
 
 				Navigation:
 
@@ -20,7 +20,7 @@
 
 					gg					-> Raméne à la premiére ligne.
 					G					-> Améne à la derniere ligne.
-					<Nbr>G				-> Améne à la ligne <Nbr>.
+					nG					-> Améne à la ligne n.
 
 					^^					-> Raméne premier caractère de la ligne.
 					g_					-> Améne au dernier caractére de la ligne.
@@ -77,7 +77,7 @@
 					Ctrl+r				-> Redo.
 
 					.					-> Répètera la dernière commande.
-					<Nbr>i<Info>[ESC]	-> écrira l'<Info> en text <Nbr> fois.
+					ni<Info>[ESC]		-> écrira l'<Info> en text n fois.
 
 
 				Mode insértion -> modification de text.
