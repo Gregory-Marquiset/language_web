@@ -12,7 +12,7 @@
 			Navigation:
 
 			Aide et recherche:
-				
+
 				git help												-> Aide générale de git.
 				git help <commande>										-> Aide de la <commande>.
 
@@ -30,7 +30,7 @@
 
 				mkdir "Nom de dossier"									-> Créé un dossier.
 				touch "Nom de fichier.extention"						-> Créé un fichier du type du .extention choisi.
-			
+
 			Configuration et status:
 
 				git config --list										-> Etat de la configuration.
