@@ -45,33 +45,38 @@
 			Versionning:
 
 				git init  												-> Créé un .git caché et initialise le versionning.
-				git add <Nom de fichier/dossier>						-> Ajoute le <fichier/dosier> a l'index donc le Tracked et le Staged.
-				git														-> Enléve le fichier/dossier du Staging courant.
+				git add <fichier>										-> Tracked et Staged le <fichier> dans l'index.
 
 				git commit -m "Nom du commit"							-> Créé un commit et le "nomme".
 				git commit -a -m "Nom du commit"						-> Staged tous se qui est Tracked puis éxécute "git commit -m". 
+
+
+			Racourcie:
+				
+				<*.txt>													-> Selectionne tous les .txt.
+				<--all>													-> Selectionne tous.
 
 			Notion:
 
 				Tracking "Tracked ou Untracked":
 					Tracked:
-						Le fichier/dossier est "suivi" par Git et peut être dans un état de Staging.
+						Le fichier est "suivi" par Git et peut être dans un état de Staging.
 							git status -s = voir le Staging.
 					Untracked:
-						Le fichier/dossier n'est pas "suivi" par Git et ne peut être dans un état de Staging.
+						Le fichier n'est pas "suivi" par Git et ne peut être dans un état de Staging.
 							git status -s = "??" en rouge.
 					Voir commandes:
-						git add <Nom de fichier/dossier> et 
+						git add <fichier> et 
 
 				Staging "Staged ou Unstaged":
 					Staged:
-						La dernière version du fichier/dossier fait partie de l'index.
-							git status -s = "M " en vert.
+						La dernière version du fichier fait partie de l'index.
+							git status -s = "M " en vert, "A " si le fichier est Staged pour la premiere fois.
 					Unstaged:
-						La dernière version du fichier/dossier ne fait pas partie de l'index.
+						La dernière version du fichier ne fait pas partie de l'index.
 							git status -s = " M" en rouge.
 					Voir commande:
-						git add <Nom de fichier/dossier> et 
+						git add <fichier> et 
 
 				Index:
 					Contient ce qui sera dans le prochain commit.
