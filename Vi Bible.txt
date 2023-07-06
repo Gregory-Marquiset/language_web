@@ -5,10 +5,10 @@
 	je l'etofferais avec le temps.
 
 	Un site bien pratique: https: //yannesposito.com/Scratch/fr/blog/Learn-Vim-Progressively/
-	
+
 
 		Liste des commandes:
-			
+
 			Mode normal	-> navigation standard.
 
 					n<commande>		-> Répètera la commande n fois.
@@ -30,7 +30,7 @@
 
 					w					-> Améne au début du prochain mot.
 					e					-> Améne à la fin du mot courant.
-					
+
 				Aide et recherche:
 
 					:help				-> Aide générale de Vim.
@@ -44,7 +44,7 @@
 
 					f<caractère>		-> Amène à la prochaine occurence de <caractère>.
 					F<caractère>		-> Amène à la précédente occurence de <caractère>.
-					
+
 					n					-> Répette la recherche.
 					N					-> Répette et inverse la recherche.
 
@@ -54,14 +54,14 @@
 
 					:q					-> Quitter.
 					:q!					-> Quitter sans sauvegarder.
-					
+
 					:w					-> Sauvegarder.
 					:wq					-> Sauvegarder et quitter.
 					:saveas <path/file>	-> Sauvegarder sous ...
 
 
 				Couper Copier Coller:
-					
+
 					d					-> coupe la selection.
 					dd					-> Coupe la ligne courante.
 					y					-> Copie la selection.
@@ -73,7 +73,7 @@
 				Undo/Redo, répètitions:
 
 					u					-> Undo.
-					
+
 					Ctrl+r				-> Redo.
 
 					.					-> Répètera la dernière commande.
@@ -89,7 +89,7 @@
 					cw					-> Passe en mode insértion, en remplacent la fin du mot.
 					Esc					-> Retour au mode normal.
 
-				Mode visuel -> 
+				Mode visuel ->
 
 					v					-> Passer en mode visuel.
 
