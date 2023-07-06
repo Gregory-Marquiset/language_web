@@ -1,0 +1,95 @@
+
+	Apprendre Vim, l'éditeur de text:
+
+	Ici je resume rapidement quelques commande de base pour Vim,
+	je l'etofferais avec le temps.
+
+	Un site bien pratique: https: //yannesposito.com/Scratch/fr/blog/Learn-Vim-Progressively/
+	
+
+		Liste des commandes:
+			
+			Mode normal	-> navigation standard.
+
+					<Nbr><commande>		-> Répètera la commande <Nbr> fois.
+
+				Navigation:
+
+					hjkl				-> Remplace les fléches.
+					Ctrl+/-				-> Zoom, dé-zoom.
+
+					gg					-> Raméne à la premiére ligne.
+					G					-> Améne à la derniere ligne.
+					<Nbr>G				-> Améne à la ligne <Nbr>.
+
+					^^					-> Raméne premier caractère de la ligne.
+					g_					-> Améne au dernier caractére de la ligne.
+
+					0					-> Raméne au début de la ligne.
+					$					-> Améne à la fin de la ligne.
+
+					w					-> Améne au début du prochain mot.
+					e					-> Améne à la fin du mot courant.
+					
+				Aide et recherche:
+
+					:help				-> Aide générale de Vim.
+					:help <commande>	-> Aide pour <commande>.
+
+					/<commande>			-> Recherche <commande> en avant dans le fichier.
+					?<commande>			-> Recherche <commande> en arriere dans le fichier.
+
+					*					-> Amène à la prochaine occurence du mot courant.
+					#					-> Amène à la précédente occurence du mot courant.
+
+					f<caractère>		-> Amène à la prochaine occurence de <caractère>.
+					F<caractère>		-> Amène à la précédente occurence de <caractère>.
+					
+					n					-> Répette la recherche.
+					N					-> Répette et inverse la recherche.
+
+
+
+				Quitter sauvegarder:
+
+					:q					-> Quitter.
+					:q!					-> Quitter sans sauvegarder.
+					
+					:w					-> Sauvegarder.
+					:wq					-> Sauvegarder et quitter.
+					:saveas <path/file>	-> Sauvegarder sous ...
+
+
+				Couper Copier Coller:
+					
+					d					-> coupe la selection.
+					dd					-> Coupe la ligne courante.
+					y					-> Copie la selection.
+					yy					-> Copie la ligne courante.
+					p					-> Colle aprés.
+					P					-> Colle avant.
+
+
+				Undo/Redo, répètitions:
+
+					u					-> Undo.
+					
+					Ctrl+r				-> Redo.
+
+					.					-> Répètera la dernière commande.
+					<Nbr>i<Info>[ESC]	-> écrira l'<Info> en text <Nbr> fois.
+
+
+				Mode insértion -> modification de text.
+
+					i					-> Passe en mode insértion.
+					A					-> Passe en mode insértion à la fin de la ligne.
+					o					-> Passe en mode insértion, créer une ligne en dessous.
+					O					-> Passe en mode insértion, créer une ligne au dessus.
+					cw					-> Passe en mode insértion, en remplacent la fin du mot.
+					Esc					-> Retour au mode normal.
+
+				Mode visuel -> 
+
+					v					-> Passer en mode visuel.
+

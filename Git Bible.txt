@@ -1,0 +1,83 @@
+
+	Apprendre Git, pour le versionning:
+
+	Ici je resume rapidement quelques commande de base pour Vim,
+	je l'etofferais avec le temps.
+
+	Un site bien pratique: https://learngitbranching.js.org/?locale=fr_FR
+
+
+		Liste de commandes:
+
+			Navigation:
+
+			Aide et recherche:
+				
+				git help												-> Aide générale de git.
+				git help <commande>										-> Aide de la <commande>.
+
+
+			Quitter sauvegarder:
+
+
+			Couper Copier Coller:
+
+
+			Undo/Redo, répètitions:
+
+
+			Création, gestion de dossiers et fichiers:
+
+				mkdir "Nom de dossier"									-> Créé un dossier.
+				touch "Nom de fichier.extention"						-> Créé un fichier du type du .extention choisi.
+			
+			Configuration et status:
+
+				git config --list										-> Etat de la configuration.
+				git config --global	user.email <email@gmail.com>		-> Configureun email d'utilisateur.
+				git config --global	user.name <Name>					-> Configure un nom d'utilisateur.
+				git config --global	color.ui true						-> Active les couleur pour le text.
+
+				git status												-> Donne l'état du projet courant.
+				git status -s											-> Donne une version courte de l'état du projet courant.
+
+
+			Versionning:
+
+				git init  												-> Créé un .git caché et initialise le versionning.
+				git add <Nom de fichier/dossier>						-> Ajoute le <fichier/dosier> a l'index donc le Tracked et le Staged.
+				git														-> Enléve le fichier/dossier du Staging courant.
+
+				git commit -m "Nom du commit"							-> Créé un commit et le "nomme".
+				git commit -a -m "Nom du commit"						-> Staged tous se qui est Tracked puis éxécute "git commit -m". 
+
+			Notion:
+
+				Tracking "Tracked ou Untracked":
+					Tracked:
+						Le fichier/dossier est "suivi" par Git et peut être dans un état de Staging.
+							git status -s = voir le Staging.
+					Untracked:
+						Le fichier/dossier n'est pas "suivi" par Git et ne peut être dans un état de Staging.
+							git status -s = "??" en rouge.
+					Voir commandes:
+						git add <Nom de fichier/dossier> et 
+
+				Staging "Staged ou Unstaged":
+					Staged:
+						La dernière version du fichier/dossier fait partie de l'index.
+							git status -s = "M " en vert.
+					Unstaged:
+						La dernière version du fichier/dossier ne fait pas partie de l'index.
+							git status -s = " M" en rouge.
+					Voir commande:
+						git add <Nom de fichier/dossier> et 
+
+				Index:
+					Contient ce qui sera dans le prochain commit.
+
+				Commit:
+					Créé et versionne une nouvelle étape du projet.
+
+				Versionning:
+					Permet de maintenir disponible les anciennes et nouvelles version d'un projet sur GitHub a partir d'un dossier local.
