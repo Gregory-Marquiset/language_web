@@ -41,6 +41,8 @@
 				git status												-> Donne l'état du projet courant.
 				git status -s											-> Donne une version courte de l'état du projet courant.
 
+				git diff												-> Affiche toutes modiffications apporter depuis le dernier commit.
+
 
 			Versionning:
 
