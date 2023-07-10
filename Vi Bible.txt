@@ -34,16 +34,16 @@
 				Aide et recherche:
 
 					:help				-> Aide générale de Vim.
-					:help <commande>	-> Aide pour <commande>.
+					:help "commande"	-> Aide pour "commande".
 
-					/<commande>			-> Recherche <commande> en avant dans le fichier.
-					?<commande>			-> Recherche <commande> en arriere dans le fichier.
+					/"commande"			-> Recherche "commande" en avant dans le fichier.
+					?"commande"			-> Recherche "commande" en arriere dans le fichier.
 
 					*					-> Amène à la prochaine occurence du mot courant.
 					#					-> Amène à la précédente occurence du mot courant.
 
-					f<caractère>		-> Amène à la prochaine occurence de <caractère>.
-					F<caractère>		-> Amène à la précédente occurence de <caractère>.
+					f"caractère"		-> Amène à la prochaine occurence de "caractère".
+					F"caractère"		-> Amène à la précédente occurence de "caractère".
 
 					n					-> Répette la recherche.
 					N					-> Répette et inverse la recherche.
@@ -57,7 +57,7 @@
 
 					:w					-> Sauvegarder.
 					:wq					-> Sauvegarder et quitter.
-					:saveas <path/file>	-> Sauvegarder sous ...
+					:saveas "path/file"	-> Sauvegarder sous ...
 
 
 				Couper Copier Coller:
@@ -77,7 +77,7 @@
 					Ctrl+r				-> Redo.
 
 					.					-> Répètera la dernière commande.
-					ni<Text>[ESC]		-> écrira le <Text> n fois.
+					ni"Text"[ESC]		-> écrira le "Text" n fois.
 
 
 				Mode insértion -> modification de text.
