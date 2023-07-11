@@ -25,68 +25,95 @@
 			Aide:
 
 				git help												-> Aide générale de git.
-				git help "commande"										-> Aide de la "commande".
+					"commande"											-> Aide de la "commande".
 
 
 			Configuration:
 
-				git config --list										-> Etat de la configuration.
-				git config --global	user.email "email@gmail.com"		-> Configureun email d'utilisateur.
-				git config --global	user.name "nom"					-> Configure un nom d'utilisateur.
-				git config --global	color.ui true						-> Active les couleur pour le text.
+				git config 
+					--list												-> Etat de la configuration.
+					--global
+						user.email "email@gmail.com"					-> Configureun email d'utilisateur.
+						user.name "nom"									-> Configure un nom d'utilisateur.
+						color.ui true									-> Active les couleur pour le text.
+						branch.autosetuprebase always					-> Lors d'un pull le rebase est automatique.
 
 
 			Status et log:
 
 				git status												-> Donne l'état du projet courant.
-				git status -s											-> Donne une version courte de l'état du projet courant.
+					-s													-> Donne une version courte de l'état du projet courant.
 
 				git log													-> Affiche la liste des commit.
-				git log -n												-> Affiche la liste des n dernier commit.
-				git log --oneline										-> Affiche la liste des commit version courte.
-				git log -p "fichier"									-> Affiche tous les commit modifiant "fichier".
+					-n													-> Affiche la liste des n dernier commit.
+					--oneline											-> Affiche la liste des commit version courte.
+					-p "fichier"										-> Affiche tous les commit modifiant "fichier".
 
 				git diff												-> Affiche toutes modiffications apporter depuis le dernier commit.
 
 
 			Versionning:
 
-				git init  												-> Créé un .git caché et initialise le versionning.
+				git init  												-> Créer un .git caché et initialise le versionning.
+					--bare												-> Créer un dépot distant dans le dossier courant pour accueillir un remote.
+
+				git remote
+					add "nom" "path/adresse"							-> Créer un remote nommé "nom" au "path/adresse" choisi.
+					-v													-> Donne la liste des remote.
+					remane "nom actuel" "nouveau nom"					-> Renome le remote.
+					remove "remote"										-> Supprime le "remote".
+
+				git clone
+					"path/adresse" "nom"								-> Clone le contenue du "path/adresse" dans un nouveau dossier nommé "nom".
+					"path/adresse" --depth n "nom"						-> Clone le contenue de n commit du "path/adresse" dans un nouveau dossier nommé "nom".
+
+				git push
+					"remote" "branch"									-> Envoie les modifications de la "branch" dans le "remote".
+					"remote" --delete "branch"							-> Supprime la "branch" dans le "remote".
+
+				git pull
+					"remote" "branch"									-> Récupère les modifications de la "branch" depuis le "remote".
+
+
+			Checkout:
+
+				git checkout
+					"commit"											-> Permet de voir l'état du projet au "commit".
+					"fichier"											-> Raméne le "fichier" à sont état au "commit" pour modification puis Staged.
+					"branch"											-> Améne à la "branch" choisi.
+
+
+			Traking et Staging:
 
 				touch .gitignore										-> Untracked tous fichier dont le nom est dans le .gitingnore.
 
-				git add "fichier"										-> Tracked et Staged le "fichier" dans l'index.
+				git add
+					"fichier"											-> Tracked et Staged le "fichier" dans l'index.
+					.													-> Tous sauf les suppression de fichier.
+					--all												-> Tous suppression de fichier comprise.
 
 				git reset												-> Unstaged le contenue de l'index.
-				git reset HEAD "fichier"								-> Unstaged le "fichier".
+					HEAD "fichier"										-> Unstaged le "fichier".
 
 
 			Commit:
 
-				git commit -m "Nom du commit"							-> Créé un commit et le "nomme".
-				git commit -a -m "Nom du commit"						-> Staged tous se qui est Tracked puis éxécute "git commit -m".
-
-					<*.txt>												-> Selectionne tous les .txt.
-					<.>													-> Tous sauf les suppression de fichier.
-					<--all>												-> Tous suppression de fichier comprise.
-
-				git commit --amend										-> Met à jour le dernier commit en ajoutant les modifications Staged.
-
-				git checkout "commit"									-> Permet de voir l'état du projet au "commit".
-				git checkout "commit" "fichier"							-> Raméne le "fichier" à sont état au "commit" pour modification puis Staged.
+				git commit												-> Créer un commit et vous demmande de le nommé.
+					-m "Nom du commit"									-> Créé un commit et le "nomme".
+					-a -m "Nom du commit"								-> Staged tous se qui est Tracked puis éxécute "git commit -m".
+					--amend												-> Met à jour le dernier commit en ajoutant les modifications Staged.
 
 
 			Branch:
 
 				git branch												-> Montre les branch éxistante.
-				git branch "nom"										-> Créé une nouvelle branch nommé "nom".
-				git branch -d "nom"										-> Supprime la branch nommé "nom".
-				git stach branch "nom"									-> Créer une branch a partire du stach.
+					-r													-> Montre les branch distante éxistante.
+					"nom"												-> Créé une nouvelle branch nommé "nom".
+					-d "branch"											-> Supprime la "branch" choisi.
 
-				git checkout "branch"									-> Améne à la "branch" choisi.
-
-				git merge "branch"										-> Merge la "branch" sur la branch courante.
-				git merge --no-ff "branch"								-> Fait un git merge "branch" en interdisant le fast forward.
+				git merge 
+					"branch"											-> Merge la "branch" sur la branch courante.
+					--no-ff "branch"									-> Fait un git merge "branch" en interdisant le fast forward.
 
 
 			Revert et Reset:
@@ -94,22 +121,33 @@
 				Revert (ne detruits pas l'historique de commit)
 
 					git revert "commit"									-> Annule le "commit" puis éxécute "git commit -m".
-					git revert "commit" "fichier"						-> Annule les modifications faite sur "fichier" au "commit" puis éxécute "git commit -m".
+						"fichier"										-> Annule les modifications faite sur "fichier" au "commit" puis éxécute "git commit -m".
 
 
 				Reset (detruits l'hisorique de commit):
 
-					git reset HEAD^										-> Raméne au commit precedent.
-					git reset "commit"									-> Raméne au "commit" en conservant les fichiers modifier non commit.
+					git reset											-> Unstaged le contenue de l'index.
+						HEAD^											-> Raméne au commit precedent.
+						"commit"										-> Raméne au "commit" en conservant les fichiers modifier non commit.
+							--soft										-> Garde les modifications en cour et les Staged
+							--mixed										-> Garde les modiffications en cour mais Unstaged.
+							--hard										-> Supprime toutes les modifications faite.
 
-						--soft											-> Garde les modifications en cour et les Staged
-						--mixed											-> Garde les modiffications en cour mais Unstaged.
-						--hard											-> Supprime toutes les modifications faite.
 
+			Remissage:
 
-				Remissage:
+				git stash												-> Sauvegarde toute modifications faite depuit le dernier commit et les supprime de l'index.
+					save "nom"											-> Ajoute un "nom" au satsh.
+					-u													-> Stash les fichier Untracked.
 
-					
+					list												-> Affiche une liste des stash éxistant.
+					show stash@{n}										-> Affiche le contenu du stash n.
+						-p												-> Affiche un contenu détailler.
+
+					apply												-> Applique le contenue du stash au travaux en cour.
+					branch "nom"										-> Créer une branch nommé "nom" à partire du stash.
+
+					drop												-> Supprime le dernier stash créer.
 
 
 			Notion:
