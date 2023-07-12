@@ -72,6 +72,7 @@
 					"remote" --delete "branch"							-> Supprime la "branch" dans le "remote".
 
 				git pull
+					-r													-> Récupère les modifications et rebase.
 					"remote" "branch"									-> Récupère les modifications de la "branch" depuis le "remote".
 
 
@@ -110,6 +111,7 @@
 					-r													-> Montre les branch distante éxistante.
 					"nom"												-> Créé une nouvelle branch nommé "nom".
 					-d "branch"											-> Supprime la "branch" choisi.
+					-M "Nouveau nom"									-> Renome la branch courante par "Nouveau nom".
 
 				git merge 
 					"branch"											-> Merge la "branch" sur la branch courante.
