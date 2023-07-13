@@ -18,18 +18,18 @@
 					hjkl				-> Remplace les fléches.
 					Ctrl+/-				-> Zoom, dé-zoom.
 
-					gg					-> Raméne à la premiére ligne.
-					G					-> Améne à la derniere ligne.
-					nG					-> Améne à la ligne n.
+					gg					-> Ramène à la premiére ligne.
+					G					-> Amène à la derniere ligne.
+					nG					-> Amène à la ligne n.
 
-					^^					-> Raméne premier caractère de la ligne.
-					g_					-> Améne au dernier caractére de la ligne.
+					^^					-> Ramène premier caractère de la ligne.
+					g_					-> Amène au dernier caractére de la ligne.
 
-					0					-> Raméne au début de la ligne.
-					$					-> Améne à la fin de la ligne.
+					0					-> Ramène au début de la ligne.
+					$					-> Amène à la fin de la ligne.
 
-					w					-> Améne au début du prochain mot.
-					e					-> Améne à la fin du mot courant.
+					w					-> Amène au début du prochain mot.
+					e					-> Amène à la fin du mot courant.
 
 				Aide et recherche:
 

@@ -16,8 +16,8 @@
 
 		Lancer ungit:
 
-			2: Dans votre dossier versionner ou à versionner entrée la commande "ungit".
-			3: Ouvre un autre Bash pour travailler
+			1: Dans votre dossier versionner ou à versionner entrée la commande "ungit".
+			2: Ouvre un autre Bash pour travailler
 
 
 		Liste de commandes:
@@ -80,8 +80,8 @@
 
 				git checkout
 					"commit"											-> Permet de voir l'état du projet au "commit".
-					"fichier"											-> Raméne le "fichier" à sont état au "commit" pour modification puis Staged.
-					"branch"											-> Améne à la "branch" choisi.
+					"fichier"											-> Ramène le "fichier" à sont état au "commit" pour modification puis Staged.
+					"branch"											-> Amène à la "branch" choisi.
 
 
 			Traking et Staging:
@@ -129,8 +129,8 @@
 				Reset (detruits l'hisorique de commit):
 
 					git reset											-> Unstaged le contenue de l'index.
-						HEAD^											-> Raméne au commit precedent.
-						"commit"										-> Raméne au "commit" en conservant les fichiers modifier non commit.
+						HEAD^											-> Ramène au commit precedent.
+						"commit"										-> Ramène au "commit" en conservant les fichiers modifier non commit.
 							--soft										-> Garde les modifications en cour et les Staged
 							--mixed										-> Garde les modiffications en cour mais Unstaged.
 							--hard										-> Supprime toutes les modifications faite.

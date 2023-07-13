@@ -1,11 +1,95 @@
 
-	Apprendre le html:
+	Apprendre le html pour le balisage, créer et structurer du contenu:
 
 	Ici je resume rapidement quelques commande de base pour le html,
 	je l'etofferais avec le temps.
 
 	Un site bien pratique:
 
+	!! Toujours nommé sans espace ni accent, uniquement des underscore. !!
+
 
 		Liste de commandes:
 
+			Mise en forme:
+
+				<!-- -->												-> Ajoute un commentaire.
+
+				!														-> Créer un code html de base.
+
+				<!DOCTYPE html>											-> Indique une page HTML.
+
+				<html> </html>											-> Englobe tout le contenue de la page sauf <!DOCTYPE html>.
+					lang="fr"											-> Précise la langue ici "fr".
+					Liste des langues									-> https://www.w3schools.com/tags/ref_language_codes.asp
+
+				<head> </head>											-> Contient les balises d'encodage <meta charset="utf-8"> et de <titre> de la page.
+					<meta charset="utf-8">								-> Indique l'encodage pour déterminé l'affichage des caractères spéciaux ici "utf-8".
+					<title> </title>									-> Place un titre de page qui sera afficher sur l'onglet web.
+
+				<body> </body>											-> Contient les contenus de la page web.
+
+
+			Contenus:
+
+				Text:
+
+					<hn> </hn>											-> Place un titre niveau n (1 à 6).
+
+					<p> </p>											-> Place un paragraphe.
+
+
+				Modif de texte:
+
+					<br>												-> Ramène le text à la ligne.
+
+					Mise en valeur de texte:
+
+						<mark> </mark>									-> Surligner le texte.
+
+						<em> </em>										-> Mettre le texte en italique.
+
+						<strong> </strong>								-> Mettre le texte en gras.
+
+
+				Liste:
+
+					<ul> </ul>											-> Place une liste non numéroté <li>.
+
+					<ol> </ol>											-> Place une liste numéroté <li>.
+
+					<li> </li>											-> Place un élément d'une liste <ol> ou <ul>.
+
+
+				Multimédia:
+
+				<img />													-> Place une image.
+					src="path ou url"									-> Indique la source de l'image path ou url.
+					alt="description"									-> Décrit l'image.
+
+
+				Lien hypertexte:
+
+					Lien absolu (url):
+						<a>Text</a>										-> Indique une rediréction.
+							href="url"									-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
+							ex: <a href="url">Text</a>					-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
+
+					Lien relatif (html):
+						<a>Text</a>										-> Indique une redirection.
+							href="fichier"								-> Indique la référence de la redirection.
+							ex: <a href="fichier">Text</a>				-> Affiche un "Text" qui en étant cliquer conduit au "fichier" choisie.
+								path/fichier							-> Décent au "path/fichier".
+								../										-> Remonte dans d'un dossier.
+
+					target="_blank"										-> Ouvre le lien dans un nouvel onglet.
+						ex: <a href="url"target="_blank">Text</a>		-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie en ouvrant un nouvel onglet.
+
+
+				Ancre:
+					id="nom"											-> Nome une balise "nom" (lettre et chiffre uniquement) pour qu'elle serve de repère.
+						ex: <h1 id="ancre1">Titre</h1>					-> Nome la balise <h1> "ancre1" pour qu'elle serve de repère.
+
+					<a href="index.html#ancre1">Titre</a>				-> Lien absolu qui conduit à l'"ancre1" qui se trouve sur la page "index.html".
+
+					<a href="ancre1">Titre</a>							-> Lien relatif qui conduit à l'"ancre1" qui se trouve sur la même page.

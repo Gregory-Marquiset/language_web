@@ -21,8 +21,8 @@
 
 				pwd														-> Montre l'emplacement courant.
 
-				cd <dossier/dossier>									-> Envoie dans le <dossier> ciblé.
-				cd ..													-> Remonte au dossier précedent.
+				cd <dossier/dossier>									-> Amène dans le <dossier> ciblé.
+				cd ..													-> Ramène au dossier précedent.
 
 					fléche haut et bas									-> Navigation dans l'historique de commande entrée.
 					Tab													-> Compléte le nom de fichier commencer.
