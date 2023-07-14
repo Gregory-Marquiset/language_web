@@ -1,0 +1,10 @@
+
+	Apprendre Bash, comme terminal:
+
+	Ici je resume rapidement quelques commande de base pour le zsh,
+	je l'etofferais avec le temps.
+
+	Un site bien pratique:
+
+
+	Les bases:

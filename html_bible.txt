@@ -4,16 +4,23 @@
 	Ici je resume rapidement quelques commande de base pour le html,
 	je l'etofferais avec le temps.
 
+	Un site bien pratique:
+		https://www.w3schools.com/tags/default.asp 
+		https://htmlcheatsheet.com/
+
+
 	Les bases:
 
 		Le format de rédaction:
 
 			!! Toujours nommé sans espace ni accent, uniquement des minuscule, chiffre et underscore. !!
 
+
 		Les balises:
 
 			<paires ouvrante> Text </paires fermante>					-> Décrit le Text qu'elles encadre.
 			<orphelines />												-> Insére un élément.
+
 
 		Les attributs:
 
@@ -24,7 +31,7 @@
 
 			Mise en forme:
 
-				<!-- -->												-> Ajoute un commentaire.
+				<!-- commentaire -->									-> Ajoute un commentaire.
 
 				!														-> Créer un code html de base.
 
@@ -37,6 +44,10 @@
 				<head> </head>											-> Contient les balises d'encodage <meta charset="utf-8"> et de <titre> de la page.
 					<meta charset="utf-8">								-> Indique l'encodage pour déterminé l'affichage des caractères spéciaux ici "utf-8".
 					<title> </title>									-> Place un titre de page qui sera afficher sur l'onglet web.
+					<link />											-> Lance les fichier associer au lancement de la page html.
+						href="fichier"									-> Spécifie le fichier à lancer.
+						rel="valeur"									-> définie la valeur à appliquer au fichier.
+							ex: <link href="fichier.css" rel="stylesheet">								-> lance le fichier.css en tant que stylesheet.
 
 				<body> </body>											-> Contient les contenus de la page web.
 
@@ -92,17 +103,22 @@
 					Lien relatif (html):
 						<a>Text</a>										-> Indique une redirection.
 							href="fichier"								-> Indique la référence de la redirection.
-								ex: <a href="fichier">Text</a>				-> Affiche un "Text" qui en étant cliquer conduit au "fichier" choisie.
+								ex: <a href="fichier">Text</a>											-> Affiche un "Text" qui en étant cliquer conduit au "fichier" choisie.
 									path/fichier						-> Décent au "path/fichier".
 									../									-> Remonte dans d'un dossier.
+							href="FICHIER"								-> Permet de télécharger le FICHIER si il est dans le même dossier que la page comportant le lien.
 
 					target="_blank"										-> Ouvre le lien dans un nouvel onglet.
 						ex: <a href="url"target="_blank">Text</a>										-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie en ouvrant un nouvel onglet.
 
 
 				Ancre:
-					id="nom"											-> Nome une balise "nom" (lettre et chiffre uniquement) pour qu'elle serve de repère.
+					id="nom"											-> Nomme une balise "nom" pour qu'elle serve de repère unique.
 						ex: <h1 id="ancre1">Titre</h1>												-> Nome la balise <h1> "ancre1" pour qu'elle serve de repère.
+
+					class="nom"											-> Créer une classe nommé "nom" appliquable à plusieurs balisses.
+						ex: <h1 class="nom">Titre</h1>
+							<p class="nom">Titre</p>												-> Attribut la classe nommé "nom" à la balise <h1> <p>.
 
 					<a href="index.html#ancre1">Titre</a>				-> Lien absolu qui conduit à l'"ancre1" qui se trouve sur la page "index.html".
 

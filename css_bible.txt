@@ -1,0 +1,22 @@
+
+	Apprendre CSS pour la déscription,la mise en forme visuel et dynamique:
+
+	Ici je resume rapidement quelques commande de base pour CSS,
+	je l'etofferais avec le temps.
+
+	Des sites bien pratique:
+		https://www.w3schools.com/cssref/index.php
+		https://htmlcheatsheet.com/css/
+
+	Les bases:
+
+				/* commentaire */										-> Ajoute un commentaire.
+
+		Les sélecteurs, propriétés et valeurs:
+
+			sélecteur, sélecteur, ect... {
+				propriétés: valeur;										-> Le sélecteur indique la balise html à modifier en fonction de la propriétés et sa valeur.
+			}
+				ex: p, h1, ."ancre" {
+					color: blue;																		-> Tout le contenue des balises <p> </p>, <h1> </h1> et ancre sera écrit en bleu.
+					}

@@ -4,7 +4,8 @@
 	Ici je resume rapidement quelques commande de base pour Vim,
 	je l'etofferais avec le temps.
 
-	Un site bien pratique: https://learngitbranching.js.org/?locale=fr_FR
+	Un site bien pratique:
+		https://learngitbranching.js.org/?locale=fr_FR
 	
 	Mod visuel:
 
@@ -70,6 +71,7 @@
 				git push
 					"remote" "branch"									-> Envoie les modifications de la "branch" dans le "remote".
 					"remote" --delete "branch"							-> Supprime la "branch" dans le "remote".
+					-ff													-> Push et éxécute un fast forward.
 
 				git pull
 					-r													-> Récupère les modifications et rebase.

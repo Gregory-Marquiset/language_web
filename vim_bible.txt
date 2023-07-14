@@ -1,10 +1,11 @@
 
-	Apprendre Vim, l'éditeur de text:
+	Apprendre Vim, pour l'édition de text:
 
 	Ici je resume rapidement quelques commande de base pour Vim,
 	je l'etofferais avec le temps.
 
-	Un site bien pratique: https: //yannesposito.com/Scratch/fr/blog/Learn-Vim-Progressively/
+	Un site bien pratique:
+		https: //yannesposito.com/Scratch/fr/blog/Learn-Vim-Progressively/
 
 
 		Liste des commandes:

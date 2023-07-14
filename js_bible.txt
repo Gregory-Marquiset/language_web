@@ -1,0 +1,11 @@
+
+	Apprendre JavaScript:
+
+	Ici je resume rapidement quelques commande de base pour JavaScript,
+	je l'etofferais avec le temps.
+
+	Des sites bien pratique:
+        https://www.w3schools.com/jsref/default.asp
+        https://htmlcheatsheet.com/js/
+
+	Les bases:
