@@ -4,9 +4,20 @@
 	Ici je resume rapidement quelques commande de base pour le html,
 	je l'etofferais avec le temps.
 
-	Un site bien pratique:
+	Les bases:
 
-	!! Toujours nommé sans espace ni accent, uniquement des underscore. !!
+		Le format de rédaction:
+
+			!! Toujours nommé sans espace ni accent, uniquement des minuscule, chiffre et underscore. !!
+
+		Les balises:
+
+			<paires ouvrante> Text </paires fermante>					-> Décrit le Text qu'elles encadre.
+			<orphelines />												-> Insére un élément.
+
+		Les attributs:
+
+			attribut="valeur"											-> L'attribut est une option de balise insérer dans les ouvrantes/orphelines et qui permet d'ajouter un "valeur".
 
 
 		Liste de commandes:
@@ -21,7 +32,7 @@
 
 				<html> </html>											-> Englobe tout le contenue de la page sauf <!DOCTYPE html>.
 					lang="fr"											-> Précise la langue ici "fr".
-					Liste des langues									-> https://www.w3schools.com/tags/ref_language_codes.asp
+					Liste des langues:									-> https://www.w3schools.com/tags/ref_language_codes.asp
 
 				<head> </head>											-> Contient les balises d'encodage <meta charset="utf-8"> et de <titre> de la page.
 					<meta charset="utf-8">								-> Indique l'encodage pour déterminé l'affichage des caractères spéciaux ici "utf-8".
@@ -64,8 +75,11 @@
 				Multimédia:
 
 				<img />													-> Place une image.
-					src="path ou url"									-> Indique la source de l'image path ou url.
+					src="path/url"										-> Indique la source de l'image path ou url.
 					alt="description"									-> Décrit l'image.
+					title="message"										-> Créer un "message" qui s'affichera au survole de l'image.
+						ex: <img src="path/url" alt="description" title="nom" />						-> Affiche l'image situé au path/ulr avec la description et le nom lorsqu'elle est survoler.
+						ex: <a href="i_origin.jpg"><img src="i_mini.jpg" alt="descr" title="nom" ></a>	-> Comme l'ex: précedent mais avec l'i_origin.jpg en lien cliquable sur i_mini.jpg.
 
 
 				Lien hypertexte:
@@ -73,22 +87,22 @@
 					Lien absolu (url):
 						<a>Text</a>										-> Indique une rediréction.
 							href="url"									-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
-							ex: <a href="url">Text</a>					-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
+								ex: <a href="url">Text</a>												-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
 
 					Lien relatif (html):
 						<a>Text</a>										-> Indique une redirection.
 							href="fichier"								-> Indique la référence de la redirection.
-							ex: <a href="fichier">Text</a>				-> Affiche un "Text" qui en étant cliquer conduit au "fichier" choisie.
-								path/fichier							-> Décent au "path/fichier".
-								../										-> Remonte dans d'un dossier.
+								ex: <a href="fichier">Text</a>				-> Affiche un "Text" qui en étant cliquer conduit au "fichier" choisie.
+									path/fichier						-> Décent au "path/fichier".
+									../									-> Remonte dans d'un dossier.
 
 					target="_blank"										-> Ouvre le lien dans un nouvel onglet.
-						ex: <a href="url"target="_blank">Text</a>		-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie en ouvrant un nouvel onglet.
+						ex: <a href="url"target="_blank">Text</a>										-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie en ouvrant un nouvel onglet.
 
 
 				Ancre:
 					id="nom"											-> Nome une balise "nom" (lettre et chiffre uniquement) pour qu'elle serve de repère.
-						ex: <h1 id="ancre1">Titre</h1>					-> Nome la balise <h1> "ancre1" pour qu'elle serve de repère.
+						ex: <h1 id="ancre1">Titre</h1>												-> Nome la balise <h1> "ancre1" pour qu'elle serve de repère.
 
 					<a href="index.html#ancre1">Titre</a>				-> Lien absolu qui conduit à l'"ancre1" qui se trouve sur la page "index.html".
 
