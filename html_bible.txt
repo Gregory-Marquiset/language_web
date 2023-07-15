@@ -4,7 +4,7 @@
 	Ici je resume rapidement quelques commande de base pour le html,
 	je l'etofferais avec le temps.
 
-	Un site bien pratique:
+	Site bien pratique:
 		https://www.w3schools.com/tags/default.asp 
 		https://htmlcheatsheet.com/
 
@@ -16,18 +16,26 @@
 			!! Toujours nommé sans espace ni accent, uniquement des minuscule, chiffre et underscore. !!
 
 
-		Les balises:
+		Les balises, attributs et valeurs:
 
 			<paires ouvrante> Text </paires fermante>					-> Décrit le Text qu'elles encadre.
 			<orphelines />												-> Insére un élément.
-
-
-		Les attributs:
-
 			attribut="valeur"											-> L'attribut est une option de balise insérer dans les ouvrantes/orphelines et qui permet d'ajouter un "valeur".
 
+			ex balises paires:
+				<p class="nom_1">
+					Text.																						-> Créer un paragraphe <p>, possédant l'attribut "class" nommé "nom_1", comptenant le "Text." .
+				</p>
 
-		Liste de commandes:
+			ex balise orphelines:
+				<img
+					src="path/url"
+					alt="description"																			-> Affiche l'image situé au "path/url" choisi avec une "description" et un "message".
+					title="message"
+				/>
+
+
+	Liste de commandes:
 
 			Mise en forme:
 
@@ -60,12 +68,20 @@
 
 					<p> </p>											-> Place un paragraphe.
 
+					<ul> </ul>											-> Place une liste non numéroté <li>.
 
-				Modif de texte:
+					<ol> </ol>											-> Place une liste numéroté <li>.
 
-					<br>												-> Ramène le text à la ligne.
+					<li> </li>											-> Place un élément d'une liste <ol> ou <ul>.
 
-					Mise en valeur de texte:
+					loremn												-> Ajoute n mots aléatoire.
+
+					p*n>loremn											-> Ajoute n paragraphe remplie de n mots aléatoire.
+
+
+					Modif de texte:
+
+						<br>											-> Ramène le text à la ligne.
 
 						<mark> </mark>									-> Surligner le texte.
 
@@ -73,24 +89,14 @@
 
 						<strong> </strong>								-> Mettre le texte en gras.
 
-
-				Liste:
-
-					<ul> </ul>											-> Place une liste non numéroté <li>.
-
-					<ol> </ol>											-> Place une liste numéroté <li>.
-
-					<li> </li>											-> Place un élément d'une liste <ol> ou <ul>.
-
-
 				Multimédia:
 
-				<img />													-> Place une image.
-					src="path/url"										-> Indique la source de l'image path ou url.
-					alt="description"									-> Décrit l'image.
-					title="message"										-> Créer un "message" qui s'affichera au survole de l'image.
-						ex: <img src="path/url" alt="description" title="nom" />						-> Affiche l'image situé au path/ulr avec la description et le nom lorsqu'elle est survoler.
-						ex: <a href="i_origin.jpg"><img src="i_mini.jpg" alt="descr" title="nom" ></a>	-> Comme l'ex: précedent mais avec l'i_origin.jpg en lien cliquable sur i_mini.jpg.
+					<img />												-> Place une image.
+						src="path/url"									-> Indique la source de l'image path ou url.
+						alt="description"								-> Décrit l'image.
+						title="message"									-> Créer un "message" qui s'affichera au survole de l'image.
+							ex: <img src="path/url" alt="description" title="nom" />							-> Affiche l'image situé au path/ulr avec la description et le nom lorsqu'elle est survoler.
+							ex: <a href="i_origin.jpg"><img src="i_mini.jpg" alt="descr" title="nom" ></a>		-> Comme l'ex: précedent mais avec l'i_origin.jpg en lien cliquable sur i_mini.jpg.
 
 
 				Lien hypertexte:
@@ -98,28 +104,32 @@
 					Lien absolu (url):
 						<a>Text</a>										-> Indique une rediréction.
 							href="url"									-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
-								ex: <a href="url">Text</a>												-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
+								ex: <a href="url">Text</a>														-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
 
 					Lien relatif (html):
 						<a>Text</a>										-> Indique une redirection.
 							href="fichier"								-> Indique la référence de la redirection.
-								ex: <a href="fichier">Text</a>											-> Affiche un "Text" qui en étant cliquer conduit au "fichier" choisie.
+								ex: <a href="fichier">Text</a>													-> Affiche un "Text" qui en étant cliquer conduit au "fichier" choisie.
 									path/fichier						-> Décent au "path/fichier".
 									../									-> Remonte dans d'un dossier.
 							href="FICHIER"								-> Permet de télécharger le FICHIER si il est dans le même dossier que la page comportant le lien.
 
 					target="_blank"										-> Ouvre le lien dans un nouvel onglet.
-						ex: <a href="url"target="_blank">Text</a>										-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie en ouvrant un nouvel onglet.
+						ex: <a href="url/fichier" target="_blank">Text</a>										-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie en ouvrant un nouvel onglet.
 
 
 				Ancre:
 					id="nom"											-> Nomme une balise "nom" pour qu'elle serve de repère unique.
-						ex: <h1 id="ancre1">Titre</h1>												-> Nome la balise <h1> "ancre1" pour qu'elle serve de repère.
+						ex: <h1 id="ancre1">Titre</h1>															-> Nome la balise <h1> "ancre1" pour qu'elle serve de repère.
 
 					class="nom"											-> Créer une classe nommé "nom" appliquable à plusieurs balisses.
-						ex: <h1 class="nom">Titre</h1>
-							<p class="nom">Titre</p>												-> Attribut la classe nommé "nom" à la balise <h1> <p>.
+						ex: <h1 class="nom_1">Titre</h1>														-> Attribut à <h1> la classe nommé "nom_1".
+							<p class="nom_1 nom_2">Titre</p>													-> Attribut à <p> les classe nommé "nom_1" et "nom_2".
 
 					<a href="index.html#ancre1">Titre</a>				-> Lien absolu qui conduit à l'"ancre1" qui se trouve sur la page "index.html".
 
-					<a href="ancre1">Titre</a>							-> Lien relatif qui conduit à l'"ancre1" qui se trouve sur la même page.
+
+				Balises universelles:
+
+					<span> </span>										-> Encadre du text pour pouvoir lui donner des attributs.
+					<div> </div>										-> Identique à <span> mais avec retour à la ligne.

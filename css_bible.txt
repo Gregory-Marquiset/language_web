@@ -16,7 +16,9 @@
 
 			sélecteur, sélecteur, ect... {
 				propriétés: valeur;										-> Le sélecteur indique la balise html à modifier en fonction de la propriétés et sa valeur.
+				propriétés: valeur;
 			}
 				ex: p, h1, ."ancre" {
 					color: blue;																		-> Tout le contenue des balises <p> </p>, <h1> </h1> et ancre sera écrit en bleu.
+					font-size: 30px;																	-> Tout le contenue des balises <p> </p>, <h1> </h1> et ancre mesurera 30 pixel.
 					}
