@@ -4,13 +4,13 @@
 	Ici je resume rapidement quelques commande de base pour Vim,
 	je l'etofferais avec le temps.
 
-	Un site bien pratique:
+	Sites bien pratique:
 		https: //yannesposito.com/Scratch/fr/blog/Learn-Vim-Progressively/
 
 
 		Liste des commandes:
 
-			Mode normal	-> navigation standard.
+			Mode normal	-> navigation et commande.
 
 					n<commande>			-> Répètera la commande n fois.
 
@@ -92,7 +92,7 @@
 
 					Esc					-> Retour au mode normal.
 
-				Mode visuel ->
+				Mode visuel -> séléction de text.
 
 					v					-> Passer en mode visuel.
-
+					s					-> Efface la séléction et passe en mode insértion.

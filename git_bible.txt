@@ -4,7 +4,7 @@
 	Ici je resume rapidement quelques commande de base pour Vim,
 	je l'etofferais avec le temps.
 
-	Un site bien pratique:
+	Sites bien pratique:
 		https://learngitbranching.js.org/?locale=fr_FR
 	
 	Mod visuel:

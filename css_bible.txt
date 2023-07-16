@@ -4,7 +4,8 @@
 	Ici je resume rapidement quelques commande de base pour CSS,
 	je l'etofferais avec le temps.
 
-	Des sites bien pratique:
+	Sites bien pratique:
+		https://codepen.io/pen/
 		https://www.w3schools.com/cssref/index.php
 		https://htmlcheatsheet.com/css/
 
@@ -25,7 +26,7 @@
 					color: blue;																		-> Tout le contenue des balises <p>, <h1>, la class et l'id sera écrit en bleu.
 					font-size: 30px;																	-> Tout le contenue des balises <p>, <h1>, la class et l'id mesurera 30 pixel.
 					}
-	Le text:
+	Text:
 
 		font-size:														-> Change la taille du text.
 			nem;														-> Taille relative à l'écrant utiliser, 1em est la taille de base, 1.5em grossir x0.5 et 0.5em pour reduire de x0.5.
@@ -34,3 +35,24 @@
 		font-family:													-> Indique l'utilisation d'une polie.
 			'police',													-> Indique la police choisie préalablement implémenter en <link> dans l'<head> du .html choisi.
 				sans-serif;												-> Aucune décoration sur la police, utile pour la lisibiliter dans les long texts.
+
+		font-style:														-> Change le style du text.
+			normal;														-> Permet d'afficher un text sans modification de style.
+			italic;														-> Passe le text en italic.
+
+		font-weight:													-> Change l'épaisseur du text.
+			normal;														-> Permet d'afficher un text sans modification d'épaisseur.
+			bold;														-> Passe le text en gras.
+			thin;														-> Affine le text.
+			100 à 900;													-> Indique une valeur d'épaiseur précise, 400 étant l'épaisseur de base.
+
+		text-decoration:												-> Ajoute des éléments au text.
+			none;														-> Permet d'afficher un text sans d'écoration.
+			underline;													-> Souligne le text.
+			line-through;												-> Barre le text.
+
+		text-align:														-> Aligne le text des balises de type block mais ne fonctionne pas sur les type inline.
+			left;														-> Sur la geuche.
+			center;														-> Au centre.
+			right;														-> Sur la droite.
+			justify;													-> ne laisse aucun espace au bord de la zone de text.

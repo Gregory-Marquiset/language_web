@@ -4,7 +4,8 @@
 	Ici je resume rapidement quelques commande de base pour JavaScript,
 	je l'etofferais avec le temps.
 
-	Des sites bien pratique:
+	Sites bien pratique:
+		https://codepen.io/pen/
         https://www.w3schools.com/jsref/default.asp
         https://htmlcheatsheet.com/js/
 

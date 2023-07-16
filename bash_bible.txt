@@ -4,7 +4,7 @@
 	Ici je resume rapidement quelques commande de base pour Bash,
 	je l'etofferais avec le temps.
 
-	Un site bien pratique:
+	Sites bien pratique:
 
 
 		Liste de commandes:

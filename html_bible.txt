@@ -4,7 +4,8 @@
 	Ici je resume rapidement quelques commande de base pour le html,
 	je l'etofferais avec le temps.
 
-	Site bien pratique:
+	Sites bien pratique:	
+		https://codepen.io/pen/
 		https://www.w3schools.com/tags/default.asp 
 		https://htmlcheatsheet.com/
 
@@ -16,7 +17,7 @@
 			!! Toujours nommé sans espace ni accent, uniquement des minuscule, chiffre et underscore. !!
 
 
-		Les balises, attributs et valeurs:
+		Balises, attributs et valeurs:
 
 			<paires ouvrante> Text </paires fermante>					-> Décrit le Text qu'elles encadre.
 			<orphelines />												-> Insére un élément.
@@ -33,6 +34,11 @@
 					alt="description"																			-> Affiche l'image situé au "path/url" choisi avec une "description" et un "message".
 					title="message"
 				/>
+
+		Balises Block et inline:
+
+			Block														-> Balises qui créer un block de text et le raménne à la ligne comme <p>, <h1> ou <div>.
+			Inline														-> Balises qui encadre sans créer de block, donc sans ramenner à la ligne comme <span>, <a>, <em> ou <strong>.
 
 
 	Liste de commandes:
