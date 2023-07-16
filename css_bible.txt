@@ -18,7 +18,19 @@
 				propriétés: valeur;										-> Le sélecteur indique la balise html à modifier en fonction de la propriétés et sa valeur.
 				propriétés: valeur;
 			}
-				ex: p, h1, ."ancre" {
-					color: blue;																		-> Tout le contenue des balises <p> </p>, <h1> </h1> et ancre sera écrit en bleu.
-					font-size: 30px;																	-> Tout le contenue des balises <p> </p>, <h1> </h1> et ancre mesurera 30 pixel.
+				ex: p,
+					h1,
+					.class,
+					#id {
+					color: blue;																		-> Tout le contenue des balises <p>, <h1>, la class et l'id sera écrit en bleu.
+					font-size: 30px;																	-> Tout le contenue des balises <p>, <h1>, la class et l'id mesurera 30 pixel.
 					}
+	Le text:
+
+		font-size:														-> Change la taille du text.
+			nem;														-> Taille relative à l'écrant utiliser, 1em est la taille de base, 1.5em grossir x0.5 et 0.5em pour reduire de x0.5.
+			npx;														-> Taille absolue, précis mais ne s'adapte pas à l'écrant, 30px pour un text de 30 pixel de haut.
+
+		font-family:													-> Indique l'utilisation d'une polie.
+			'police',													-> Indique la police choisie préalablement implémenter en <link> dans l'<head> du .html choisi.
+				sans-serif;												-> Aucune décoration sur la police, utile pour la lisibiliter dans les long texts.
