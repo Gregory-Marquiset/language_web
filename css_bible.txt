@@ -8,6 +8,7 @@
 		https://codepen.io/pen/
 		https://www.w3schools.com/cssref/index.php
 		https://htmlcheatsheet.com/css/
+		https://developer.mozilla.org/fr/docs/Web/CSS/color_value#les_mots-cl%C3%A9s
 
 	Les bases:
 
@@ -56,3 +57,31 @@
 			center;														-> Au centre.
 			right;														-> Sur la droite.
 			justify;													-> ne laisse aucun espace au bord de la zone de text.
+
+	Couleurs:
+		https://color.adobe.com/fr/create/color-wheel
+		https://coolors.co/
+		https://cssgradient.io/
+		https://uigradients.com/
+
+			color:														-> Change la couleur du text.
+				#nnnnnn;												-> Valeur en héxadécinale, 6 chiffre ou lettre précéder d'un #.
+				rgb(nnn, nnn, nnn)										-> Valeur en rgb indique le rouge, vert, bleu.
+				rgba(nnn, nnn, nnn, n)									-> Ajoute l'attribut a pour l'opaciter la valeur est de 0.0 à 1
+
+	Background: https://developer.mozilla.org/en-US/docs/Web/CSS/background
+
+		color:															-> Même usage que color: mais pour l'arrière de la balise.
+
+		url(path/url)													-> Même usage que color: mais avec une image.
+
+		linear-gradient(ndeg, héx/rgb, héx/rgb)							-> Créer un dégrader orienter vers n degrer.
+
+		attachment														-> Gére les deplacement de l'image attacher.
+			https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
+
+		size															-> Redimentionne l'image.
+			https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+
+		position														-> Indique qu'elle partie de l'image est choisi.
+			https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
