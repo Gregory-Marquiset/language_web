@@ -5,6 +5,7 @@
 	je l'etofferais avec le temps.
 
 	Sites bien pratique:
+		https://developer.mozilla.org/fr/docs/Web/JavaScript
 		https://codepen.io/pen/
         https://www.w3schools.com/jsref/default.asp
         https://htmlcheatsheet.com/js/

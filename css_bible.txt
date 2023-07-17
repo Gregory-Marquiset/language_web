@@ -5,10 +5,10 @@
 	je l'etofferais avec le temps.
 
 	Sites bien pratique:
+		https://developer.mozilla.org/fr/docs/Web/CSS
 		https://codepen.io/pen/
 		https://www.w3schools.com/cssref/index.php
 		https://htmlcheatsheet.com/css/
-		https://developer.mozilla.org/fr/docs/Web/CSS/color_value#les_mots-cl%C3%A9s
 
 	Les bases:
 
@@ -58,7 +58,7 @@
 			right;														-> Sur la droite.
 			justify;													-> ne laisse aucun espace au bord de la zone de text.
 
-	Couleurs:
+	Couleurs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Color_picker_tool
 		https://color.adobe.com/fr/create/color-wheel
 		https://coolors.co/
 		https://cssgradient.io/
@@ -76,12 +76,25 @@
 		url(path/url)													-> Même usage que color: mais avec une image.
 
 		linear-gradient(ndeg, héx/rgb, héx/rgb)							-> Créer un dégrader orienter vers n degrer.
+			https://developer.mozilla.org/fr/docs/Web/CSS/CSS_images/Using_CSS_gradients
 
 		attachment														-> Gére les deplacement de l'image attacher.
-			https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
+			https://developer.mozilla.org/fr/docs/Web/CSS/background-attachment
 
 		size															-> Redimentionne l'image.
-			https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+			https://developer.mozilla.org/fr/docs/Web/CSS/background-size
 
 		position														-> Indique qu'elle partie de l'image est choisi.
-			https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+			https://developer.mozilla.org/fr/docs/Web/CSS/background-position
+
+	
+	Bordures: https://developer.mozilla.org/fr/docs/Web/CSS/border
+		https://developer.mozilla.org/fr/docs/Web/CSS/CSS_backgrounds_and_borders/Border-image_generator
+		https://9elements.github.io/fancy-border-radius/#0.100.100.0--.
+
+	Boutons: https://getbootstrap.com/docs/4.0/components/button-group/
+
+	Ombres:
+		https://developer.mozilla.org/fr/docs/Web/CSS/CSS_backgrounds_and_borders/Box-shadow_generator
+		https://shadows.brumm.af/
+		https://getcssscan.com/css-box-shadow-examples
