@@ -41,9 +41,6 @@
 			Block														-> Balises qui créer un block de text et le raménne à la ligne comme <p>, <h1> ou <div>.
 			Inline														-> Balises qui encadre sans créer de block, donc sans ramenner à la ligne comme <span>, <a>, <em> ou <strong>.
 
-
-	Liste de commandes:
-
 			Mise en forme:
 
 				<!-- commentaire -->									-> Ajoute un commentaire.
@@ -67,76 +64,73 @@
 				<body> </body>											-> Contient les contenus de la page web.
 
 
-			Contenus:
+	Contenus:
 
-				Text:
+			Text:
 
-					<hn> </hn>											-> Place un titre niveau n (1 à 6).
+				<hn> </hn>												-> Place un titre niveau n (1 à 6).
 
-					<p> </p>											-> Place un paragraphe.
+				<p> </p>												-> Place un paragraphe.
 
-					<ul> </ul>											-> Place une liste non numéroté <li>.
+				<ul> </ul>												-> Place une liste non numéroté <li>.
 
-					<ol> </ol>											-> Place une liste numéroté <li>.
+				<ol> </ol>												-> Place une liste numéroté <li>.
 
-					<li> </li>											-> Place un élément d'une liste <ol> ou <ul>.
+				<li> </li>												-> Place un élément d'une liste <ol> ou <ul>.
 
-					loremn												-> Ajoute n mots aléatoire.
+				loremn													-> Ajoute n mots aléatoire.
 
-					p*n>loremn											-> Ajoute n paragraphe remplie de n mots aléatoire.
-
-
-					Modif de texte:
-
-						<br>											-> Ramène le text à la ligne.
-
-						<mark> </mark>									-> Surligner le texte.
-
-						<em> </em>										-> Mettre le texte en italique.
-
-						<strong> </strong>								-> Mettre le texte en gras.
-
-				Multimédia:
-
-					<img />												-> Place une image.
-						src="path/url"									-> Indique la source de l'image path ou url.
-						alt="description"								-> Décrit l'image.
-						title="message"									-> Créer un "message" qui s'affichera au survole de l'image.
-							ex: <img src="path/url" alt="description" title="nom" />							-> Affiche l'image situé au path/ulr avec la description et le nom lorsqu'elle est survoler.
-							ex: <a href="i_origin.jpg"><img src="i_mini.jpg" alt="descr" title="nom" ></a>		-> Comme l'ex: précedent mais avec l'i_origin.jpg en lien cliquable sur i_mini.jpg.
+				p*n>loremn												-> Ajoute n paragraphe remplie de n mots aléatoire.
 
 
-				Lien hypertexte:
+			Modif de texte:
 
-					Lien absolu (url):
-						<a>Text</a>										-> Indique une rediréction.
-							href="url"									-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
-								ex: <a href="url">Text</a>														-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
+				<br>													-> Ramène le text à la ligne.
 
-					Lien relatif (html):
-						<a>Text</a>										-> Indique une redirection.
-							href="fichier"								-> Indique la référence de la redirection.
-								ex: <a href="fichier">Text</a>													-> Affiche un "Text" qui en étant cliquer conduit au "fichier" choisie.
-									path/fichier						-> Décent au "path/fichier".
-									../									-> Remonte dans d'un dossier.
-							href="FICHIER"								-> Permet de télécharger le FICHIER si il est dans le même dossier que la page comportant le lien.
+				<mark> </mark>											-> Surligner le texte.
 
-					target="_blank"										-> Ouvre le lien dans un nouvel onglet.
-						ex: <a href="url/fichier" target="_blank">Text</a>										-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie en ouvrant un nouvel onglet.
+				<em> </em>												-> Mettre le texte en italique.
 
+				<strong> </strong>										-> Mettre le texte en gras.
 
-				Ancre:
-					id="nom"											-> Nomme une balise "nom" pour qu'elle serve de repère unique.
-						ex: <h1 id="ancre1">Titre</h1>															-> Nome la balise <h1> "ancre1" pour qu'elle serve de repère.
+			Multimédia:
 
-					class="nom"											-> Créer une classe nommé "nom" appliquable à plusieurs balisses.
-						ex: <h1 class="nom_1">Titre</h1>														-> Attribut à <h1> la classe nommé "nom_1".
-							<p class="nom_1 nom_2">Titre</p>													-> Attribut à <p> les classe nommé "nom_1" et "nom_2".
+				<img />													-> Place une image.
+					src="path/url"										-> Indique la source de l'image path ou url.
+					alt="description"									-> Décrit l'image.
+					title="message"										-> Créer un "message" qui s'affichera au survole de l'image.
+						ex: <img src="path/url" alt="description" title="nom" />								-> Affiche l'image situé au path/ulr avec la description et le nom lorsqu'elle est survoler.
+						ex: <a href="i_origin.jpg"><img src="i_mini.jpg" alt="descr" title="nom" ></a>			-> Comme l'ex: précedent mais avec l'i_origin.jpg en lien cliquable sur i_mini.jpg.
 
-					<a href="index.html#ancre1">Titre</a>				-> Lien absolu qui conduit à l'"ancre1" qui se trouve sur la page "index.html".
+			Lien hypertexte:
 
+				Lien absolu (url):
+					<a>Text</a>											-> Indique une rediréction.
+						href="url"										-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
+							ex: <a href="url">Text</a>															-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie.
 
-				Balises universelles:
+				Lien relatif (html):
+					<a>Text</a>											-> Indique une redirection.
+						href="fichier"									-> Indique la référence de la redirection.
+							ex: <a href="fichier">Text</a>														-> Affiche un "Text" qui en étant cliquer conduit au "fichier" choisie.
+								path/fichier							-> Décent au "path/fichier".
+								../										-> Remonte dans d'un dossier.
+						href="FICHIER"									-> Permet de télécharger le FICHIER si il est dans le même dossier que la page comportant le lien.
 
-					<span> </span>										-> Encadre du text pour pouvoir lui donner des attributs.
-					<div> </div>										-> Identique à <span> mais avec retour à la ligne.
+				target="_blank"											-> Ouvre le lien dans un nouvel onglet.
+					ex: <a href="url/fichier" target="_blank">Text</a>											-> Affiche un "Text" qui en étant cliquer conduit à l'"url" choisie en ouvrant un nouvel onglet.
+
+			Ancre:
+				id="nom"												-> Nomme une balise "nom" pour qu'elle serve de repère unique.
+					ex: <h1 id="ancre1">Titre</h1>																-> Nome la balise <h1> "ancre1" pour qu'elle serve de repère.
+
+				class="nom"												-> Créer une classe nommé "nom" appliquable à plusieurs balisses.
+					ex: <h1 class="nom_1">Titre</h1>															-> Attribut à <h1> la classe nommé "nom_1".
+						<p class="nom_1 nom_2">Titre</p>														-> Attribut à <p> les classe nommé "nom_1" et "nom_2".
+
+				<a href="index.html#ancre1">Titre</a>					-> Lien absolu qui conduit à l'"ancre1" qui se trouve sur la page "index.html".
+
+			Balises universelles:
+
+				<span> </span>											-> Encadre du text pour pouvoir lui donner des attributs.
+				<div> </div>											-> Identique à <span> mais avec retour à la ligne.

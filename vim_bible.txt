@@ -80,8 +80,7 @@
 					.					-> Répètera la dernière commande.
 					ni"Text"[ESC]		-> écrira le "Text" n fois.
 
-
-				Mode insértion -> modification de text.
+				Changement de mode:
 
 					i					-> Passe en mode insértion au curseur.
 					a					-> Passe en mode insértion aprés le curseur.
@@ -89,10 +88,21 @@
 					o					-> Passe en mode insértion, créer une ligne en dessous.
 					O					-> Passe en mode insértion, créer une ligne au dessus.
 					cw					-> Passe en mode insértion, en remplacent la fin du mot.
+					s					-> Passe en mode insértion, en supprimant le caractére sous le curseur.
+
+					v					-> Passer en mode visuel.
+
+
+				Mode insértion -> modification de text.
 
 					Esc					-> Retour au mode normal.
 
 				Mode visuel -> séléction de text.
 
-					v					-> Passer en mode visuel.
 					s					-> Efface la séléction et passe en mode insértion.
+					fléches				-> Créer une séléction.
+					y					-> Copie la séléction.
+					d					-> Coupe la séléction.
+					p					-> Colle la séléction et passe en mode normal.
+
+					Esc					-> Retour au mode normal.

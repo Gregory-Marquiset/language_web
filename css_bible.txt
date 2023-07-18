@@ -27,6 +27,7 @@
 					color: blue;																		-> Tout le contenue des balises <p>, <h1>, la class et l'id sera écrit en bleu.
 					font-size: 30px;																	-> Tout le contenue des balises <p>, <h1>, la class et l'id mesurera 30 pixel.
 					}
+
 	Text:
 
 		font-size:														-> Change la taille du text.
@@ -86,7 +87,6 @@
 
 		position														-> Indique qu'elle partie de l'image est choisi.
 			https://developer.mozilla.org/fr/docs/Web/CSS/background-position
-
 	
 	Bordures: https://developer.mozilla.org/fr/docs/Web/CSS/border
 		https://developer.mozilla.org/fr/docs/Web/CSS/CSS_backgrounds_and_borders/Border-image_generator
