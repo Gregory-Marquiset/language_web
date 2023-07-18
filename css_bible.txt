@@ -9,15 +9,17 @@
 		https://codepen.io/pen/
 		https://www.w3schools.com/cssref/index.php
 		https://htmlcheatsheet.com/css/
+		https://caniuse.com/
 
 	Les bases:
+		https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/CSS_basics
 
-				/* commentaire */										-> Ajoute un commentaire.
+				/* commentaire */																		-> Ajoute un commentaire.
 
 		Les sélecteurs, propriétés et valeurs:
 
 			sélecteur, sélecteur, ect... {
-				propriétés: valeur;										-> Le sélecteur indique la balise html à modifier en fonction de la propriétés et sa valeur.
+				propriétés: valeur;																		-> Le sélecteur indique la balise html à modifier en fonction de la propriétés et sa valeur.
 				propriétés: valeur;
 			}
 				ex: p,
@@ -27,6 +29,25 @@
 					color: blue;																		-> Tout le contenue des balises <p>, <h1>, la class et l'id sera écrit en bleu.
 					font-size: 30px;																	-> Tout le contenue des balises <p>, <h1>, la class et l'id mesurera 30 pixel.
 					}
+
+	Sélecteur:
+		https://www.w3.org/Style/css3-selectors-updates/WD-css3-selectors-20010126.fr.html#selectors
+
+		* {}															-> Applique le contenue des {} à touts les balises de l'html.
+
+		p {}															-> Applique le contenue des {} à toutes les balises <p>.
+
+		h1, em {}														-> Applique le contenue des {} à toutes les balises <h1> et <em>.
+
+		h1 em {}														-> Applique le contenue des {} à toutes les balises <em> contenue dans des balises <h1>.
+
+		h1 + em {}														-> Applique le contenue des {} à la premiere balises <em> contenue dans chaques balises <h1>.
+
+		a[title] {}														-> Applique le contenue des {} à toutes les balises <a> contenant l'attribut title.
+
+		a[title="text_ici"] {}											-> Applique le contenue des {} à toutes les balises <a> contenant l'attribut title="text".
+		
+		a[title*="ici"] {}												-> Applique le contenue des {} à toutes les balises <a> contenant l'attribut title= contenant la valeur "ici" comme "text_ici".
 
 	Text:
 
@@ -59,7 +80,9 @@
 			right;														-> Sur la droite.
 			justify;													-> ne laisse aucun espace au bord de la zone de text.
 
-	Couleurs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Color_picker_tool
+	Couleurs:
+		https://developer.mozilla.org/fr/docs/Web/CSS/CSS_colors
+		https://developer.mozilla.org/fr/docs/Web/CSS/CSS_colors/Color_picker_tool
 		https://color.adobe.com/fr/create/color-wheel
 		https://coolors.co/
 		https://cssgradient.io/
@@ -70,7 +93,8 @@
 				rgb(nnn, nnn, nnn)										-> Valeur en rgb indique le rouge, vert, bleu.
 				rgba(nnn, nnn, nnn, n)									-> Ajoute l'attribut a pour l'opaciter la valeur est de 0.0 à 1
 
-	Background: https://developer.mozilla.org/en-US/docs/Web/CSS/background
+	Background:
+		https://developer.mozilla.org/fr/docs/Web/CSS/background
 
 		color:															-> Même usage que color: mais pour l'arrière de la balise.
 
@@ -88,13 +112,26 @@
 		position														-> Indique qu'elle partie de l'image est choisi.
 			https://developer.mozilla.org/fr/docs/Web/CSS/background-position
 	
-	Bordures: https://developer.mozilla.org/fr/docs/Web/CSS/border
+	Bordures:
+		https://developer.mozilla.org/fr/docs/Web/CSS/border
 		https://developer.mozilla.org/fr/docs/Web/CSS/CSS_backgrounds_and_borders/Border-image_generator
 		https://9elements.github.io/fancy-border-radius/#0.100.100.0--.
 
-	Boutons: https://getbootstrap.com/docs/4.0/components/button-group/
+	Boutons:
+		https://getbootstrap.com/docs/4.0/components/button-group/
 
 	Ombres:
 		https://developer.mozilla.org/fr/docs/Web/CSS/CSS_backgrounds_and_borders/Box-shadow_generator
 		https://shadows.brumm.af/
 		https://getcssscan.com/css-box-shadow-examples
+
+	Pseudo classes:
+		https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes
+
+		sélecteur:hover {}												-> Ajoute un éffet au survole du sélecteur.
+
+		sélecteur:active {}												-> Ajoute un éffet à l'activation d'un sélecteur.
+
+		sélecteur:focus {}												-> Ajoute un éffet quant le sélecteur est sélectionner via tab ou comme pour un questionnaire.
+
+		sélecteur:visited {}											-> Ajoute un éffet à un sélecteur qui à déja été activer.
