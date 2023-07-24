@@ -150,7 +150,7 @@
 
 		sélecteur:visited {}											-> Ajoute un éffet à un sélecteur qui à déja été activer.
 
-	Flexbox:															-> Ont encadre en html dans une class= nommé container.
+	Display:
 		display: flex;													-> Rend le contenue flexible.
 				https://flexboxfroggy.com/#fr
 			flex-direction:												-> Indique la direction d'orientation.
@@ -187,3 +187,15 @@
 					n;													-> Numéroter les élément de -n à n.
 
 				flex: 1;												-> Étire l'élément au maximum.
+
+		display: grid;													-> Agence le contenue sur une grille.
+				https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout
+			
+	Tableau:
+		https://developer.mozilla.org/fr/docs/Web/CSS/CSS_table
+		<table> </table>												-> Indique le début et la fin d'un tableau.
+			<tr> </tr>													-> Indique le début et la fin d'une ligne du tableau.
+				<td> </td>												-> Indique le contenue d'une cellule.
+
+	Formulaire:
+		<form> </form>
